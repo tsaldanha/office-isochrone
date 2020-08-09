@@ -1,12 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
-import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
 
 import RequestIsochrone from "utils";
-import { MapContainer, GeocoderContainer } from "./styled";
+import { MapContainer, Container } from "./styled";
 import {
   isoLayer,
   workers,
@@ -15,12 +13,17 @@ import {
   clusterCount
 } from "./configs";
 
+import Card from "components/Card";
+import Menu from "components/Menu";
+import Project from "components/Content/Project";
+import Filters from "components/Content/Filters";
+
 const Map = () => {
   const [config, setConfig] = useState({
-    lat: -23.5627717,
-    lng: -46.6557555,
-    zoom: 12,
-    profile: 'walking'
+    lat: -23.5424207,
+    lng: -46.492737,
+    zoom: 13,
+    profile: 'cycling'
   });
 
   const [map, setMap] = useState(null);
@@ -36,7 +39,7 @@ const Map = () => {
   const loadIsochrones = (lng, lat, map, profile = config.profile) => {
     map.getSource("isoA").setData(emptyData); 
     RequestIsochrone
-    .get(`${profile}/${lng},${lat}?contours_minutes=15,30,60&contours_colors=f00,0f0,00f&polygons=true&access_token=${accessToken}`)
+    .get(`${profile}/${lng},${lat}?contours_minutes=10&polygons=true&access_token=${accessToken}`)
     .then(result =>{
       if (map) {
         console.log(result.data);
@@ -45,20 +48,12 @@ const Map = () => {
     });
   }
 
-  const changeCenter = (lng,lat, map) => { 
-    setConfig(Object.assign(config, {
-      lat,
-      lng
-    }))
-    loadIsochrones(lng,lat, map)
-  }
-
   useEffect(()=>{
     mapboxgl.accessToken = accessToken;
     const initializeMap = ({setMap, mapContainer}) => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
-        style: 'mapbox://styles/mapbox/streets-v9',
+        style: 'mapbox://styles/tsaldanha/ckd6jgq7q00n81iphgmaesi38',
         center: [config.lng, config.lat],
         zoom: config.zoom,
       }); 
@@ -79,7 +74,7 @@ const Map = () => {
 
         loadIsochrones(config.lng, config.lat, map);
 
-        map.addSource("workers", workers);
+        map.addSource("students", workers);
         map.addLayer(clusters);
         map.addLayer(clusterCount);
         map.addLayer(unclustered);
@@ -87,7 +82,7 @@ const Map = () => {
         map.on('click', 'clusters', function (e) {
           var features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
           var clusterId = features[0].properties.cluster_id;
-          map.getSource('workers').getClusterExpansionZoom(clusterId, function (err, zoom) {
+          map.getSource('students').getClusterExpansionZoom(clusterId, function (err, zoom) {
             if (err)
               return;
           
@@ -110,36 +105,23 @@ const Map = () => {
           .addTo(map);
       });
       
-      const geocoder = new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        placeholder: "Onde eu vou?",
-        mapboxgl: mapboxgl,
-        flyTo: {
-          zoom: config.zoom
-        },
-        marker: {
-          color: '#3FB1CE'
-        },
-      });
-      map.addControl(geocoder, "top-left");
-      //geocoder.addTo("#geocoder-ctrl")
-
-      geocoder.on('result', (e)=>{
-        marker.remove();
-        const [lng, lat] = e.result.geometry.coordinates;
-        changeCenter(lng,lat, map);
-      });
-      geocoder.on('clear', (e)=>{
-        map.getSource("isoA").setData(emptyData);
-      });
-
     }
       if(!map) initializeMap({setMap, mapContainer});
   },[map, config]);
 
   return (
-    <MapContainer ref={el => (mapContainer.current = el)} className="absolute top right left bottom">
-    </MapContainer>
+    <Container> 
+      <Card>
+        <h1> Qual o alcance em mobilidade ativa? </h1>
+        <Menu/>  
+        <Filters />
+      
+      </Card>
+      <MapContainer ref={el => (mapContainer.current = el)} className="absolute top right left bottom">
+      
+      </MapContainer>
+    </Container>
+    
 
   );
 

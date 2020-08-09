@@ -6,8 +6,8 @@ const isoLayer = {
   source: "isoA",
   layout: {},
   paint: {
-    'fill-color': "green",
-    'fill-opacity': 0.2,
+    'fill-color': "#27AE60",
+    'fill-opacity': 0.5  ,
   },
 };
 
@@ -22,7 +22,7 @@ const workers = {
 const clusters = {
   id: "clusters",
   type: "circle",
-  source: "workers",
+  source: "students",
   filter: ["has", "point_count"],
   paint: {
     'circle-opacity': 0.5,
@@ -50,7 +50,7 @@ const clusters = {
 const clusterCount = {
   id: "cluster-count",
   type: "symbol",
-  source: "workers",
+  source: "students",
   filter: ["has", "point_count"],
   layout: {
     "text-field": "{point_count_abbreviated}",
@@ -65,7 +65,7 @@ const clusterCount = {
 const unclustered = {
   id: "unclustered-point",
   type: "circle",
-  source: "workers",
+  source: "students",
   filter: ["!", ["has", "point_count"]],
   paint: {
     "circle-color": "#0000ff",

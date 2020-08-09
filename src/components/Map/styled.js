@@ -4,38 +4,15 @@ const MapContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
-
-  .mapboxgl-ctrl-geocoder{
-    float: none;
-    width: calc(100% - 40px);
-    margin: 20px;
-    height: 50px;
-    line-height: 50px;
-    max-width: calc(100% - 40px);
-
-    input {
-      font-size: 16px;
-    }
-  }
-  .mapboxgl-ctrl-top-left{
-    position: relative;
-  }
-  .mapboxgl-ctrl-geocoder--icon-search{
-    display: none;
-  }
+  z-index: 1;
+  
 `;
 
-const GeocoderContainer = styled.div`
-  margin: 30px;
-  text-align: center;
-
-  .mapboxgl-ctrl-geocoder{
-    width: 100%;
-    max-width: 100%;
-  }
+const Container = styled.div`
+  color: #333333;
 `;
 
 export {
     MapContainer,
-    GeocoderContainer
+    Container
 }
