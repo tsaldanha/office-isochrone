@@ -14,16 +14,16 @@ import {
 } from "./configs";
 
 import Card from "components/Card";
-import Menu from "components/Menu";
-import Project from "components/Content/Project";
 import Filters from "components/Content/Filters";
+
 
 const Map = () => {
   const [config, setConfig] = useState({
     lat: -23.5424207,
     lng: -46.492737,
     zoom: 13,
-    profile: 'cycling'
+    profile: 'walking',
+    time: 10
   });
 
   const [map, setMap] = useState(null);
@@ -36,10 +36,10 @@ const Map = () => {
     type: "FeatureCollection",
   };
 
-  const loadIsochrones = (lng, lat, map, profile = config.profile) => {
+  const loadIsochrones = (lng, lat, map, profile, time) => {
     map.getSource("isoA").setData(emptyData); 
     RequestIsochrone
-    .get(`${profile}/${lng},${lat}?contours_minutes=10&polygons=true&access_token=${accessToken}`)
+    .get(`${profile}/${lng},${lat}?contours_minutes=${time}&polygons=true&access_token=${accessToken}`)
     .then(result =>{
       if (map) {
         console.log(result.data);
@@ -72,7 +72,7 @@ const Map = () => {
 
         map.addLayer(isoLayer);
 
-        loadIsochrones(config.lng, config.lat, map);
+        loadIsochrones(config.lng, config.lat, map, config.profile, config.time);
 
         map.addSource("students", workers);
         map.addLayer(clusters);
@@ -113,8 +113,7 @@ const Map = () => {
     <Container> 
       <Card>
         <h1> Qual o alcance em mobilidade ativa? </h1>
-        <Menu/>  
-        <Filters />
+        <Filters action={loadIsochrones} config={config} map={map}/>
       
       </Card>
       <MapContainer ref={el => (mapContainer.current = el)} className="absolute top right left bottom">

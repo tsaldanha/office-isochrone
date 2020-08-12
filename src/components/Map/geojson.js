@@ -1,2065 +1,3228 @@
-let geojson ={
+let geojson = {
     "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.491877,-23.5460354]
+    "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.490345, -23.5469578]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
             },
-            "properties" : {
-                "gender" : "Male",
-                "hours" : "afternoon"
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4342838,-23.5466695]
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4337487, -23.5476823]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
             },
-            "properties" : {
-                "gender" : "Male",
-                "hours" : "afternoon"
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3792522,-23.500411]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4604302,-23.5608942]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4491969,-23.6272821]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5007658,-23.5088811]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64936E+15,-23.5480819]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5028367,-23.5599809]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4020796,-23.5287952]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4771657,-23.540129]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4904385,-23.5465838]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.63808E+15,-23.4936061]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4420558,-23.5317688]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4963011,-23.5398101]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4727554,-23.5054371]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4900892,-23.6242874]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4578791,-23.5080098]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-47.0313329,-23.8460767]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3960778,-23.5377686]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3952167,-23.5312475]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.420437,-23.5814048]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.6646E+15,-23.5426496]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4899571,-23.4887907]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3431041,-23.4905488]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4441321,-23.5543087]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4977201,-23.5468549]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4917732,-23.5444784]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3629898,-23.5540701]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64926E+15,-23.5437146]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4840137,-23.5262017]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3752107,-23.5166943]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4490498,-23.5301441]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4263077,-23.5478477]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.65218E+15,-23.5565528]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64983E+15,-23.5826901]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4411262,-23.5327438]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4748044,-23.5556778]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4403848,-23.576337]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64814E+15,-23.6086042]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4585571,-23.5141987]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4018349,-23.5353577]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64002E+15,-23.5790014]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3913944,-23.5896506]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.454141,-23.5365012]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4391946,-23.5125789]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4554516,-23.4896276]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.6465E+15,-23.5141065]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4864296,-23.5476614]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4328648,-23.5630407]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4025987,-23.5146652]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4547224,-23.5165595]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5121891,-23.5101671]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4132451,-23.5667293]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.456674,-23.5535299]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4851378,-23.5524656]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4945664,-23.5487079]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4861777,-23.5446635]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4784753,-23.5556674]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4599679,-23.4864474]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4917309,-23.5447472]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5212046,-23.512836]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3806999,-23.5852153]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4541507,-23.5489943]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4270485,-23.5658615]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4846549,-23.5734416]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4797336,-23.5532645]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4076117,-23.5627499]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4871822,-23.5034282]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4392796,-23.5427024]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4137892,-23.5738639]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4252688,-23.5316135]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4910278,-23.5430698]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4833321,-23.5608958]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.467455,-23.5617791]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4206032,-23.5288148]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.6424E+15,-23.5231614]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.2518869,-23.5518662]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3710377,-23.5210818]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4309182,-23.5430696]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4131156,-23.6150256]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5040126,-23.544991]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3572752,-23.5465719]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4489853,-23.6050134]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64636E+15,-23.5174675]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3981295,-23.5611103]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4169911,-23.5125078]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4895015,-23.5500522]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4934302,-23.5439225]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5073446,-23.4964233]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3983321,-23.5976174]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4894433,-23.5570339]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64693E+15,-23.558617]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4948455,-23.5647448]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5000607,-23.5432346]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64871E+15,-23.541668]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5024826,-23.5700641]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4947393,-23.5413212]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4566442,-23.5623499]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5036742,-23.5409404]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4881791,-23.5437828]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3567587,-23.5460247]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5035526,-23.539318]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4983156,-23.5458078]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.498132,-23.5534891]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.449579,-23.5114519]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4637873,-23.5591481]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4549917,-23.5189484]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4948947,-23.5501193]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.63965E+15,-23.5004685]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4073103,-23.4801779]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4411466,-23.543446]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4416587,-23.5273075]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4151226,-23.6143613]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4910278,-23.5430698]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.464474,-23.562556]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64172E+15,-23.5237487]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4589838,-23.5449307]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4622181,-23.5242696]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4790915,-23.599608]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4427148,-23.5405934]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5139339,-23.5578276]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64971E+15,-23.5483803]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5021055,-23.5352116]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5015783,-23.5401429]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64744E+15,-23.5128648]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3810363,-23.5151856]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.490854,-23.570277]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4089393,-23.5046572]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4931587,-23.5469717]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4238393,-23.5643988]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.485228,-23.520417]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4883288,-23.58813]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4149776,-23.5414227]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4910887,-23.5916062]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4881816,-23.5497509]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4869401,-23.4979984]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4354846,-23.5320802]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4890619,-23.5049923]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4958016,-23.531234]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64463E+15,-23.5650517]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4881791,-23.5437828]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4754154,-23.5225201]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64117E+15,-23.5675293]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4208262,-23.5931843]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4629052,-23.6313126]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64785E+15,-23.5697323]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3885218,-23.5811602]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4353161,-23.5482651]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5221218,-23.5592813]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.47899,-23.4958121]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4876941,-23.5422611]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5111441,-23.4967209]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.497021,-23.5433238]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4657887,-23.5338822]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4274788,-23.552804]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4925782,-23.5541859]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4393687,-23.5820894]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64296E+15,-23.5113516]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4336995,-23.6136717]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5002194,-23.5590561]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.6385E+15,-23.5361547]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4887537,-23.5486551]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4390726,-23.5128879]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4964965,-23.5423419]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4980147,-23.6013446]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5011512,-23.5403981]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64962E+15,-23.5440252]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4958008,-23.5407711]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4921053,-23.5495948]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.491917,-23.5459811]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.505621,-23.5551358]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5050788,-23.5504375]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4426005,-23.5577516]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5032682,-23.5451817]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5116073,-23.5010502]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4884451,-23.5465675]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4075534,-23.5787879]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64575E+15,-23.5677239]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4918807,-23.5986407]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.643E+15,-23.6042728]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4882205,-23.5420876]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4246042,-23.4978133]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4480294,-23.4999836]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4970884,-23.5450249]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5047031,-23.5384158]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4899631,-23.6060224]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5170047,-23.5456918]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4865412,-23.5266548]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5029845,-23.4935102]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4100085,-23.5310727]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.51185,-23.5527166]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4492994,-23.5182691]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4618293,-23.5336376]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.487528,-23.5454268]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3982118,-23.600942]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4729863,-23.5307383]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4342838,-23.5466695]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4126142,-23.5643429]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5493209,-23.5321577]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.494088,-23.5640242]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4268162,-23.4735251]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4656877,-23.4851098]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4857223,-23.5925075]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4681201,-23.5064817]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4672697,-23.5151244]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3870274,-23.5014636]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.63956E+15,-23.5403989]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.485012,-23.5757788]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.63943E+15,-23.558997]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3944262,-23.5279346]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4343206,-23.6096926]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4797538,-23.5475975]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4588706,-23.5364219]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4980314,-23.53148]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4953876,-23.5496051]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4635763,-23.5186667]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5003521,-23.5524447]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4768857,-23.568535]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.488032,-23.4987893]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.431832,-23.5288415]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4578578,-23.5538708]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4514383,-23.5160944]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4569279,-23.5584111]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4805893,-23.5335562]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.473107,-23.5192924]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4951954,-23.5467892]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64895E+15,-23.4982885]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3850037,-23.4773701]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4939496,-23.4790897]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4743356,-23.4870954]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4823744,-23.4873095]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5109335,-23.5290876]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4970582,-23.5408443]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.485012,-23.5757788]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4774428,-23.5414248]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5010149,-23.5070922]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.63929E+15,-23.5549451]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4003329,-23.5473475]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4818744,-23.5181318]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4100366,-23.5589255]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4446348,-23.6128141]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.65341E+15,-23.511126]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.421233,-23.5231774]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5032284,-23.544693]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3948207,-23.5398063]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4496698,-23.5594653]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4239457,-23.6114721]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5139292,-23.5019075]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.485012,-23.5757788]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4211678,-23.5826247]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3912333,-23.5214205]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4912184,-23.5431283]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64998E+15,-23.5375739]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3220739,-23.4745072]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4833236,-23.5958151]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4867862,-23.5218818]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3810363,-23.5151856]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4103534,-23.4996343]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4944743,-23.5444924]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4594066,-23.5101437]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4843932,-23.5369629]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4879061,-23.5409332]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4148888,-23.5179103]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4931838,-23.5610212]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4356884,-23.5528023]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4490541,-23.5124683]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4459491,-23.5369289]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4942806,-23.5631071]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.510742,-23.5607846]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3871684,-23.484439]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5050147,-23.5444541]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5079662,-23.5573789]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3793545,-23.4998765]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5046613,-23.5406029]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5229611,-23.5725885]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.65028E+15,-23.5446835]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.65033E+15,-23.5728069]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.6805749,-23.4520801]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4237676,-23.5597475]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4894433,-23.5570339]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64126E+15,-23.6139043]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.490505,-23.5661142]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3908929,-23.5039419]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.467455,-23.5617791]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4875795,-23.5433957]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.3305394,-23.5463748]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4706261,-23.490008]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.4796701,-23.5506817]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5033727,-23.6042678]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-4,.64658E+15,-23.5236916]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.2479825,-23.5549314]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.5015783,-23.5401429]
-            }
-        },
-    {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-46.6611561,-23.4549379]
-            }
-        },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3821166, -23.4958273]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4592845, -23.5619258]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4491969, -23.6272821]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5011904, -23.5087187]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4938344, -23.5472463]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5041544, -23.5599202]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.402225, -23.528627]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4770172, -23.5404489]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4906215, -23.5465915]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3836167, -23.4930829]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4313946, -23.5345589]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4962598, -23.5400019]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4750523, -23.504307]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4906185, -23.6225785]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4579956, -23.5079325]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.6592186, -23.7404199]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3947194, -23.5397236]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3950946, -23.5307204]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4209857, -23.5826049]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.6483709, -23.5429447]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5555365, -23.5206054]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3431282, -23.4890653]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5845652, -23.7275488]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.497162, -23.5450735]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4917913, -23.5447737]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3631267, -23.5536222]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4920498, -23.543594]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4841571, -23.526355]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3749492, -23.5165109]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4491437, -23.5296381]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64258E+15, -23.5492182]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5239894, -23.5565528]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5004701, -23.5887505]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4403567, -23.536016]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4752136, -23.5552817]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64404E+15, -23.5762568]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4812259, -23.6100009]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4583831, -23.5143488]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4007219, -23.5349844]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4057606, -23.5807567]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3911183, -23.5883683]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4538759, -23.5368578]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4394831, -23.5124948]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64552E+15, -23.4896117]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .6465E+15, -23.5142691]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4863369, -23.5478523]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4263908, -23.5642848]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4012472, -23.5150416]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64545E+15, -23.5174492]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5105462, -23.5091259]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4119965, -23.5751406]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4520731, -23.5558477]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4850141, -23.5517421]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4947172, -23.548563]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.486044, -23.5445865]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4803722, -23.5536014]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4599137, -23.4864872]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4917913, -23.5447737]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5213014, -23.5123368]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.37968, -23.5862471]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64545E+15, -23.5492537]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4247392, -23.5698003]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4849972, -23.5743632]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4793181, -23.5518729]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4031982, -23.5656287]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4875638, -23.5033706]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4384043, -23.5375651]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4142361, -23.5739967]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4250395, -23.5315738]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4926512, -23.5426136]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4884369, -23.5588093]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4664971, -23.5575996]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4206104, -23.5287684]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4247392, -23.5228522]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.2491205, -23.5526822]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3698603, -23.5207021]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4307454, -23.5436644]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4115568, -23.6152353]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4998686, -23.5466089]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3594432, -23.5471025]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64488E+15, -23.6052327]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4631912, -23.5183985]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.398621, -23.5615808]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4167822, -23.5128022]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64896E+15, -23.5507864]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4968612, -23.5434821]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5025754, -23.4981813]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.398621, -23.5984154]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4893436, -23.5563316]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4701037, -23.5594495]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4761154, -23.552325]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5004701, -23.5438441]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64866E+15, -23.5414152]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4979761, -23.5717508]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4938279, -23.5417411]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4565801, -23.5621731]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5036115, -23.5408687]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4878402, -23.5427253]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .63582E+15, -23.5456119]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5037785, -23.539343]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64984E+15, -23.5460863]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4975713, -23.5527911]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4466652, -23.511463]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4637171, -23.5586385]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4569196, -23.5188966]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4961846, -23.5492688]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3955308, -23.5028367]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4092017, -23.4799342]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4415583, -23.5438642]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4419338, -23.5269804]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4154311, -23.6140917]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4926512, -23.5426136]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4635063, -23.5624185]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4166321, -23.5238916]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4586836, -23.5450703]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4646938, -23.5269473]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.477919, -23.6008208]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4442619, -23.5415364]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5137477, -23.5576409]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4998686, -23.5466089]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5022746, -23.534657]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5019739, -23.5399056]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64747E+15, -23.5125095]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3802285, -23.513813]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4908471, -23.5702358]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4075628, -23.5050551]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4929519, -23.5471786]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4241792, -23.5658748]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4845329, -23.5210591]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4884732, -23.587606]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4149713, -23.5413729]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4911658, -23.5919241]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64884E+15, -23.5503682]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64866E+15, -23.4983]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4313946, -23.534554]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4885297, -23.5011015]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4940988, -23.5301429]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4458685, -23.5650006]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4878402, -23.5427253]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.476416, -23.5155629]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4118337, -23.5678535]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4202351, -23.5925939]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4972143, -23.5717897]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4785202, -23.5701089]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3831952, -23.584373]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4351753, -23.5482954]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5243105, -23.5592813]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4785954, -23.4958795]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4878402, -23.5427253]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5225049, -23.499517]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4968612, -23.5434821]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.465896, -23.5336082]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4267194, -23.5526617]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4884369, -23.5588093]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64401E+15, -23.5843537]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4296191, -23.5114021]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5527876, -23.5222446]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4998686, -23.5590994]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .6382E+15, -23.5191812]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4887423, -23.5483913]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4394831, -23.5124948]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64974E+15, -23.5412115]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64991E+15, -23.6015134]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .65015E+15, -23.5406305]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4963888, -23.5442897]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4947562, -23.5418583]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4927807, -23.5497024]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.490345, -23.5469578]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5049816, -23.554334]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .65051E+15, -23.5509773]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64365E+15, -23.5596195]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4998686, -23.5466089]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5115991, -23.4995273]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4881409, -23.5458034]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4097421, -23.5787879]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4580067, -23.5678079]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.489945, -23.5999552]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4307454, -23.6045824]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64896E+15, -23.5415684]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4250395, -23.4982942]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4502704, -23.4984501]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.497162, -23.5450735]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5046808, -23.5384668]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64896E+15, -23.6055003]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .65176E+15, -23.5474214]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4863369, -23.5264434]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5064855, -23.4944819]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4091266, -23.5310811]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5116573, -23.5535104]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4478669, -23.5187169]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4601861, -23.5351892]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4870694, -23.545813]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3977206, -23.6007743]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4730898, -23.5302323]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4337487, -23.5476823]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3831952, -23.584373]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .65488E+15, -23.5322649]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4942006, -23.5639401]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.430255, -23.4780418]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4662552, -23.4845852]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4720574, -23.5980351]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4676992, -23.5065881]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4708551, -23.5155629]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3869633, -23.5013014]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.39904, -23.5385521]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4849972, -23.5743632]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3950195, -23.5588388]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3929938, -23.5285028]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4365157, -23.6094267]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4796596, -23.5485712]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4610876, -23.5363946]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64981E+15, -23.5317073]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4938344, -23.5472463]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.458984, -23.518422]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5002444, -23.5537068]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64773E+15, -23.5685011]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4885297, -23.5011015]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64398E+15, -23.5274855]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4601861, -23.5524302]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4501764, -23.5165758]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4557378, -23.5567012]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4800778, -23.5333887]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4731095, -23.5200626]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64951E+15, -23.5470182]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4902457, -23.5016341]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .63839E+15, -23.4795254]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .6492E+15, -23.4811855]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4743118, -23.4871824]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4830297, -23.4875328]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5155099, -23.5300331]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.497162, -23.5409101]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4851342, -23.5759789]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.477919, -23.5401678]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5007709, -23.5070718]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3929188, -23.5554324]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4029025, -23.5459902]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.481642, -23.5184271]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4094268, -23.5582208]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4446199, -23.6127541]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5340903, -23.5111199]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4205353, -23.5246568]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5034421, -23.5446492]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3947194, -23.5397236]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4490686, -23.5571792]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4224625, -23.6089964]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5143065, -23.502251]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4851342, -23.5759789]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4209857, -23.5826049]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3917935, -23.5203616]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4926512, -23.5426136]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4998686, -23.5376872]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3200496, -23.4738906]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4824284, -23.5967425]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4868631, -23.521943]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3802285, -23.513813]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4103274, -23.4997109]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4963888, -23.5442897]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.459585, -23.5106051]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4812409, -23.536095]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4893436, -23.5438427]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4150569, -23.518242]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4941548, -23.5624653]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4361515, -23.5526798]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.447266, -23.5125636]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4457639, -23.5370068]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4944684, -23.5621929]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5130585, -23.5608564]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3874135, -23.4840282]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4998686, -23.5466089]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5077638, -23.5574572]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3821166, -23.4958273]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5058839, -23.5418589]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5221288, -23.5712988]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5022746, -23.5438763]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5022746, -23.5736163]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .66818E+15, -23.4506375]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4242073, -23.5600223]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4893436, -23.5563316]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4365657, -23.5160836]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.489945, -23.5648668]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .63914E+15, -23.502929]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4664971, -23.5575996]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .64866E+15, -23.5414152]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.3292648, -23.5472288]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4708551, -23.4917795]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4801756, -23.5502584]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "morning"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-4, .65024E+15, -23.6064974]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.4677399, -23.5233917]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.2530872, -23.5542225]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.5019739, -23.5399056]
+                },
+                "properties": {
+                    "gender": "male",
+                    "hours": "night"
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [-46.6588125, -23.4545184]
+                },
+                "properties": {
+                    "gender": "female",
+                    "hours": "afternoon"
+                }
+            },
     ]
 }
 export default geojson;
