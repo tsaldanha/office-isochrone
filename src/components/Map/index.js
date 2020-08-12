@@ -7,7 +7,7 @@ import RequestIsochrone from "utils";
 import { MapContainer, Container } from "./styled";
 import {
   isoLayer,
-  workers,
+  students,
   clusters,
   unclustered,
   clusterCount
@@ -23,7 +23,9 @@ const Map = () => {
     lng: -46.492737,
     zoom: 13,
     profile: 'walking',
-    time: 10
+    time: 10,
+    gender: "all",
+    hours: "all"
   });
 
   const [map, setMap] = useState(null);
@@ -42,7 +44,6 @@ const Map = () => {
     .get(`${profile}/${lng},${lat}?contours_minutes=${time}&polygons=true&access_token=${accessToken}`)
     .then(result =>{
       if (map) {
-        console.log(result.data);
         map.getSource("isoA").setData(result.data);
       }
     });
@@ -74,11 +75,11 @@ const Map = () => {
 
         loadIsochrones(config.lng, config.lat, map, config.profile, config.time);
 
-        map.addSource("students", workers);
+        map.addSource("students", students);
         map.addLayer(clusters);
         map.addLayer(clusterCount);
         map.addLayer(unclustered);
-               
+
         map.on('click', 'clusters', function (e) {
           var features = map.queryRenderedFeatures(e.point, { layers: ['clusters'] });
           var clusterId = features[0].properties.cluster_id;
@@ -99,11 +100,21 @@ const Map = () => {
         map.on('mouseleave', 'clusters', function () {
           map.getCanvas().style.cursor = '';
         });
+        const teste = {
+          type: "FeatureCollection",
+          features: []
+        }
+        teste.features = students.data.features.filter((place)=>{
+          return place.properties.gender === "male"
+        })
+        //map.getSource("students").setData(teste);
 
+        
         marker
           .setLngLat([config.lng,config.lat])
           .addTo(map);
       });
+      
       
     }
       if(!map) initializeMap({setMap, mapContainer});
@@ -113,7 +124,7 @@ const Map = () => {
     <Container> 
       <Card>
         <h1> Qual o alcance em mobilidade ativa? </h1>
-        <Filters action={loadIsochrones} config={config} map={map}/>
+        <Filters action={loadIsochrones} config={config} map={map} dataset={students} />
       
       </Card>
       <MapContainer ref={el => (mapContainer.current = el)} className="absolute top right left bottom">

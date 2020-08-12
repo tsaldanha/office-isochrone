@@ -1,7 +1,19 @@
 import React, { useState }from 'react';
 
-const Filters = ({action, config, map})=>{
+const Filters = ({action, config, map, dataset})=>{
     const [filters, setFilters] = useState(config);
+    const filterLayer = (state) => {
+        setFilters(Object.assign(filters, state));
+        let newdata = {
+            type: "FeatureCollection",
+            features: [],
+        }
+        newdata.features = dataset.data.features.filter((student) => {
+            return (filters.gender ==="all" || student.properties.gender === filters.gender) && (filters.hours ==="all" || student.properties.hours === filters.hours);
+        });
+        console.log(newdata);
+        map.getSource("students").setData(newdata);
+    }
     const executeFilters = (state) => {
         const nState = Object.assign(filters,state);
         setFilters(nState);
@@ -12,46 +24,60 @@ const Filters = ({action, config, map})=>{
     }
     return(
     <>
-        <Gender /> 
-        <Hours />
+        <Gender filterAction = {filterLayer} /> 
+        <Hours filterAction = {filterLayer} />
         <Modal iso={executeFilters}/>
         <Minutes iso={executeFilters}/>
     </>
 )};
 
-const Gender = () => {
+const Gender = ({ filterAction }) => {
     const [check, setCheck] = useState("all");
+    const executeFilter = (param) => {
+        setCheck(param);
+        const obj = {
+            gender : param
+        }
+        filterAction(obj);
+    }
     return (
         <div>
             <p>Qual o genero do aluno?</p>
             <label>Todos</label>
-            <input type="radio" name="gender" value="all" checked={check === "all"} onChange={() => setCheck("all")}/>
+            <input type="radio" name="gender" value="all" checked={check === "all"} onChange={() => executeFilter("all")}/>
             <br/>
             <label>Feminino</label>
-            <input type="radio" name="gender" value="Female" checked={check === "Female"} onChange={() => setCheck("Female")}/>
+            <input type="radio" name="gender" value="female" checked={check === "female"} onChange={() => executeFilter("female")}/>
             <br/>
             <label>Masculino</label>
-            <input type="radio" name="gender" value="Male" checked={check === "Male"} onChange={() => setCheck("Male")}/>
+            <input type="radio" name="gender" value="fale" checked={check === "male"} onChange={() => executeFilter("male")}/>
         </div>
     )
 }
 
-const Hours = () => {
+const Hours = ({ filterAction }) => {
     const [check, setCheck] = useState("all");
+    const executeFilter = (param) => {
+        setCheck(param);
+        const obj = {
+            hours : param
+        }
+        filterAction(obj);
+    }
     return (
         <div>
             <p>Qual o turno da aula?</p>
             <label>Todos</label>
-            <input type="radio" name="hours" value="all" checked={check === "all"} onChange={() => setCheck("all")}/>
+            <input type="radio" name="hours" value="all" checked={check === "all"} onChange={() => executeFilter("all")}/>
             <br/>
             <label>Manhã</label>
-            <input type="radio" name="hours" value="morning" checked={check === "morning"} onChange={() => setCheck("morning")}/>
+            <input type="radio" name="hours" value="morning" checked={check === "morning"} onChange={() => executeFilter("morning")}/>
             <br/>
             <label>Tarde</label>
-            <input type="radio" name="hours" value="afternoon" checked={check === "afternoon"} onChange={() => setCheck("afternoon")}/>
+            <input type="radio" name="hours" value="afternoon" checked={check === "afternoon"} onChange={() => executeFilter("afternoon")}/>
             <br/>
             <label>Noite</label>
-            <input type="radio" name="hours" value="night"  checked={check === "night"} onChange={() => setCheck("night")}/>
+            <input type="radio" name="hours" value="night"  checked={check === "night"} onChange={() => executeFilter("night")}/>
         </div>
     )
 }

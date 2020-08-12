@@ -11,7 +11,7 @@ const isoLayer = {
   },
 };
 
-const workers = {
+const students = {
   type: "geojson",
   data: geojson,
   cluster: true,
@@ -77,7 +77,7 @@ const unclustered = {
 
 export {
   isoLayer,
-  workers,
+  students,
   clusters,
   clusterCount,
   unclustered
