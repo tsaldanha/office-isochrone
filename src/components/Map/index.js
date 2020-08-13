@@ -100,15 +100,6 @@ const Map = () => {
         map.on('mouseleave', 'clusters', function () {
           map.getCanvas().style.cursor = '';
         });
-        const teste = {
-          type: "FeatureCollection",
-          features: []
-        }
-        teste.features = students.data.features.filter((place)=>{
-          return place.properties.gender === "male"
-        })
-        //map.getSource("students").setData(teste);
-
         
         marker
           .setLngLat([config.lng,config.lat])
